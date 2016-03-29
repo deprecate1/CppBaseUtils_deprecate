@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="uchardet">
+      <UniqueIdentifier>{22eee3ba-2de8-4a02-b5f7-75cc14f8bcee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wrap">
+      <UniqueIdentifier>{536d7040-2fe9-4399-9465-0f8857077817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharsetDetectDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CharsetDetectDemoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\CharDistribution.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\JpCntx.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsBig5Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsCharSetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsCodingStateMachine.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nscore.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsEscCharsetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsEUCJPProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsEUCKRProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsEUCTWProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsGB2312Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsHebrewProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsLatin1Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsMBCSGroupProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsPkgInt.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsSBCharSetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsSBCSGroupProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsSJISProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsUniversalDetector.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\nsUTF8Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\prmem.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uchardet\uchardet.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EncodingMapper.h">
+      <Filter>wrap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CharsetDetectDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CharsetDetectDemoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\CharDistribution.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\JpCntx.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangBulgarianModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangCyrillicModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangGreekModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangHebrewModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangHungarianModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\LangThaiModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsBig5Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsCharSetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsEscCharsetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsEscSM.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsEUCJPProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsEUCKRProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsEUCTWProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsGB2312Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsHebrewProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsLatin1Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsMBCSGroupProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsMBCSSM.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsSBCharSetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsSBCSGroupProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsSJISProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsUniversalDetector.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\nsUTF8Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uchardet\uchardet.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\EncodingMapper.cpp">
+      <Filter>wrap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CharsetDetectDemo.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CharsetDetectDemo.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CharsetDetectDemo.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
