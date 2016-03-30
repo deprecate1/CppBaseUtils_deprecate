@@ -6,6 +6,8 @@ CPPToolTip项目地址：[http://www.codeproject.com/Articles/3655/CPPToolTip-v2
 
 cHtmlEditor项目地址：[http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor](http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor "http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor")
 
+CSerialPort项目地址：[https://github.com/liquanhai/CSerialPort](https://github.com/liquanhai/CSerialPort "https://github.com/liquanhai/CSerialPort")
+
 文件
 ===============
 
