@@ -4,7 +4,7 @@ CButtonST项目地址：[http://www.codeproject.com/Articles/57/CButtonST-v3-9-M
 
 CPPToolTip项目地址：[http://www.codeproject.com/Articles/3655/CPPToolTip-v2-1](http://www.codeproject.com/Articles/3655/CPPToolTip-v2-1 "http://www.codeproject.com/Articles/3655/CPPToolTip-v2-1")
 
-
+cHtmlEditor项目地址：[http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor](http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor "http://www.codeproject.com/Articles/12200/DHTML-Editor-with-Table-Support-and-Source-Editor")
 
 文件
 ===============
