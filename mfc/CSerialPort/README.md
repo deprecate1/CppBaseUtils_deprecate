@@ -1,4 +1,8 @@
-CSerialPort, 来自：[https://github.com/liquanhai/CSerialPort](https://github.com/liquanhai/CSerialPort "https://github.com/liquanhai/CSerialPort")
+CSerialPort来自：
+
+[https://github.com/liquanhai/CSerialPort](https://github.com/liquanhai/CSerialPort "https://github.com/liquanhai/CSerialPort")
+
+说明：
 ===========
 
 First Version by Remon Spekreijse on 2000-02-08
@@ -40,3 +44,9 @@ http://blog.csdn.net/itas109/article/details/18358297
 
 by liquanhai on 2014-12-18
 * 增加一些处理措施，主要是对减少CPU占用率
+
+
+用法：
+================
+[http://blog.csdn.net/liquanhai/article/details/6941574](http://blog.csdn.net/liquanhai/article/details/6941574 "http://blog.csdn.net/liquanhai/article/details/6941574")
+
