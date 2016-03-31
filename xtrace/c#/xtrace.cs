@@ -11,9 +11,7 @@ namespace System
 		[DllImport("kernel32.dll")]  private extern static IntPtr LoadLibrary(string path);
 		[DllImport("kernel32.dll")]  private extern static IntPtr GetProcAddress(IntPtr lib, string funcName);
 		[DllImport("kernel32.dll")]  private extern static bool FreeLibrary(IntPtr lib);
-		//[DllImport("kernel32.dll")]  private static extern void GetSystemDirectory(StringBuilder SysDir, int count);
 
-		// ====================================
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			private delegate void MagicTraceProc(int type, int color, IntPtr output, int void1, int void2);
 
@@ -25,7 +23,6 @@ namespace System
 			{
 				const int nChars = 128;
 				string temp_path = System.IO.Path.GetTempPath() + "xTrace.dll";
-				//string temp_path = System.IO.Path.GetTempPath() + "xTrace64.dll";
 				hLib = LoadLibrary(temp_path);
 			}
 
