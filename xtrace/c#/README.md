@@ -1,5 +1,7 @@
 示例：
 ==============
+先将xtrace.cs加入工程，测试代码：
+
 	// 无时间头，裸输出
 	XTRACE.print("没有颜色参数输出黑字\n");
 	XTRACE.print(System.Drawing.Color.FromArgb(0, 0, 255), "蓝色\n\n");
@@ -35,4 +37,4 @@
 
 结果：
 ===========
-![](screenshot.png)
+![](https://github.com/wjx0912/CppBaseUtils/blob/master/xtrace/c%23/screenshot.png)
