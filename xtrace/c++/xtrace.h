@@ -128,7 +128,6 @@ inline void xTrace(LPCWSTR lpszFormat, ...)
 			int len = lstrlen(pszBuffer);
 			int rest = len;
 			TCHAR * pTemp = pszBuffer;
-			int i = 0;
 			while (rest)
 			{
 				int l = rest;
