@@ -11,7 +11,7 @@
 | ------ | ------ |
 | uchardet | 文件字符编码探测 |
 | xtrace | windows平台的release trace工具，支持vc++,c#,lua,python |
-| xxx  | xxx |
+| xxx1  | xxx2 |
 
 
 
