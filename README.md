@@ -7,15 +7,12 @@
 子库
 ===========
 
+| 文件夹 | 说明 |
+| ------ | ------ |
+| uchardet | 文件字符编码探测 |
+| xtrace | windows平台的release trace工具，支持vc++,c#,lua,python |
+| xxx  | xxx |
 
-<table>
-<tbody>
-<tr><td><em>文件夹</em></td><td><em>说明</em></td></tr>
-<tr><td>uchardet</td><td>文件字符编码探测</td></tr>
-<tr><td>xtrace</td><td>windows平台的release trace工具，支持vc++,c#,lua,python</td></tr>
-<tr><td>xxxxxxx</td><td>xxxx</td></tr>
-</tbody>
-</table>
 
 
 联系
