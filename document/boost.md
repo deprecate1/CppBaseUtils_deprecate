@@ -33,4 +33,4 @@ visual studio 2015编译
 		return 0;
 	}
 
-编译的时候把include/lib路径加入到工程
+编译的时候把include和lib路径加入到工程
