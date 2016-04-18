@@ -10,4 +10,27 @@ visual studio 2015编译
 
 使用
 ========
-待续。。。
+    
+	#include "stdafx.h"
+	#include <boost/regex.hpp>
+	#include <iostream>
+	#include <string>
+	
+	int main()
+	{
+		std::string line;
+		boost::regex pattern("[a-zA-Z_][a-zA-Z0-9_]*");
+		boost::smatch matches;
+		//按“^Z 回车”退出
+		std::cin >> line;
+		while (std::cin) {
+			if (boost::regex_match(line, matches, pattern))
+				std::cout << "有效的标识符" << "" << std::endl;
+			else
+				std::cout << "无效标识符" << std::endl;
+			std::cin >> line;
+		}
+		return 0;
+	}
+
+编译的时候把include/lib路径加入到工程
