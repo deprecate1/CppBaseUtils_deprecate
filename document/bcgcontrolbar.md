@@ -24,4 +24,5 @@ compile bcg22 for visual studio 2015
 
 测试
 ===
-
+(1)新建的project平台工具集最好和库一样，是‘Visual Studio 2015 - Windows XP (v140_xp)’
+(2)参考test_project/bcgcbpro22_test.rar，有可执行文件
