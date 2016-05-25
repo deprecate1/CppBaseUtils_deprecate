@@ -3,8 +3,8 @@
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros" />
 	<PropertyGroup>
-		<IncludePath>C:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro;$(IncludePath)</IncludePath>
-		<LibraryPath>C:\Program Files (x86)\BCGSoft\BCGControlBarPro\Bin;$(LibraryPath)</LibraryPath>
+		<IncludePath>D:\vs_sdk\BCGControlBarPro\BCGCBPro;$(IncludePath)</IncludePath>
+		<LibraryPath>D:\vs_sdk\BCGControlBarPro\Bin;$(LibraryPath)</LibraryPath>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link Condition="'$(Configuration)'=='Debug'">

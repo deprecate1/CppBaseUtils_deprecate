@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
-		<BOOST_DIR>D:\vs_sdk\boost_1_61_0\</BOOST_DIR>
+		<BOOST_DIR>D:\project\boost_1_60_0\</BOOST_DIR>
 	</PropertyGroup>
 	<PropertyGroup>
 		<IncludePath>$(BOOST_DIR);$(IncludePath)</IncludePath>
