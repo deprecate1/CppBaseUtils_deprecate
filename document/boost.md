@@ -1,6 +1,6 @@
 下载
 ========
-http://www.boost.org/     下载boost_1_60_0.7z
+http://www.boost.org/     下载boost_1_60_0.7z(不建议用1_61_0，里面依赖python sdk很麻烦)
 
 visual studio 2015编译
 ========
