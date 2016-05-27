@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
-		<POCO_SDK_DIR>D:\vs_sdk\poco-1.7.3\</POCO_SDK_DIR>
+		<POCO_SDK_DIR>D:\sdk\poco-1.7.3\</POCO_SDK_DIR>
 	</PropertyGroup>
 	<PropertyGroup>
 		<IncludePath>$(POCO_SDK_DIR)\CppUnit\include;$(IncludePath)</IncludePath>
