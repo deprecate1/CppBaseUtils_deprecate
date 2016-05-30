@@ -7,11 +7,12 @@ https://curl.haxx.se/download/curl-7.49.0.zip
 
 编译
 ===
-程序拷贝到d:\sdk，这个和属性表有关，建议第三方库都统一放这里
-
-打开curl-7.49.0\projects\Windows\VC14\curl-all.sln编译两个项目"DLL Release/Win32"和"DLL Debug/Win32"
-
-得到libcurl.dll和libcurld.dll，拷贝到D:\sdk\bin并添加这个路径到path
+- 程序拷贝到d:\sdk，这个和属性表有关，建议第三方库都统一放这里
+- 打开curl-7.49.0\projects\Windows\VC14\curl-all.sln
+- 修改：把‘DLL Debug’  配置下的‘多线程调试 DLL (/MDd)’改成‘多线程调试 (/MTd)’
+- 修改：把‘DLL Release’配置下的‘多线程 DLL (/MD)’     改成‘多线程 (/MT)’
+- 编译两个项目"DLL Release/Win32"和"DLL Debug/Win32"
+- 得到libcurl.dll和libcurld.dll，拷贝到D:\sdk\bin并添加这个路径到path
 
 
 
