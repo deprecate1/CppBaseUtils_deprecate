@@ -67,7 +67,7 @@ void inline CResizer::AddChild(HWND hWnd, Alignment corner, DWORD dwStyle)
 	// Set bFixedWidth to TRUE if the width should be fixed instead of variable.
 	// Set bFixedHeight to TRUE if the height should be fixed instead of variable.
 {
-	assert(hWnd);
+	//assert(hWnd);
 
 	ResizeData rd;
 	rd.corner = corner;
@@ -108,7 +108,7 @@ void inline CResizer::Initialize(HWND hParent, const RECT& rcMin, const RECT& rc
 	//
 	// Note:hParent can either be a CWnd or a window handle (HWND)
 {
-	assert(::IsWindow(hParent));
+	//assert(::IsWindow(hParent));
 
 	m_hParent = hParent;
 	::GetClientRect(hParent, &m_rcInit);
@@ -234,8 +234,8 @@ void inline CResizer::RecalcLayout()
 {
 	if (m_rcInit.Width() <= 0 || m_rcInit.Height() <= 0)
 		return;
-	assert(m_rcInit.Width() > 0 && m_rcInit.Height() > 0);
-	assert(::IsWindow(m_hParent));
+	//assert(m_rcInit.Width() > 0 && m_rcInit.Height() > 0);
+	//assert(::IsWindow(m_hParent));
 
 	CRect rcCurrent;
 	::GetClientRect(m_hParent, &rcCurrent);
