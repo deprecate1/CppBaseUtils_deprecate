@@ -12,4 +12,9 @@
 		<IncludePath>$(WINDOWS_KIT_DIR)\Include\winrt\wrl\;$(IncludePath)</IncludePath>
 		<LibraryPath>$(WINDOWS_KIT_DIR)\Lib\winv6.3\um\x86\;$(LibraryPath)</LibraryPath>
 	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>Vfw32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
 </Project>
