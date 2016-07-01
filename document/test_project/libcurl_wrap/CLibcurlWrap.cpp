@@ -27,7 +27,7 @@ public:
 
 		m_urlpath	= urlpath;
 		m_buffer	= buffer;
-		m_len		= len;
+		m_len = len;	*m_len = 0x0;
 
 		CURLcode res;
 		curl_global_init(CURL_GLOBAL_ALL);
@@ -62,9 +62,10 @@ private:
 
 	size_t OnWriteData(void* buffer, size_t size, size_t nmemb)
 	{
-		*m_len = size * nmemb;
-		memcpy(m_buffer, buffer, *m_len);
-		return *m_len;
+		memcpy((char *)m_buffer + *m_len, buffer, size * nmemb);
+		*m_len += size * nmemb;
+
+		return size * nmemb;
 	}
 };
 
