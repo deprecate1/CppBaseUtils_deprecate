@@ -118,6 +118,19 @@ inline void xTrace(LPCWSTR lpszFormat, ...)
 	MAGIC_TRACE_PROC pMTrace = GetMagicTraceProc();
 	if (pMTrace)
 	{
+		SYSTEMTIME sys;
+		GetLocalTime(&sys);
+
+		TCHAR szBuf[512] = _T("");
+		wsprintf(szBuf
+			, L"%d-%02d-%02d %02d:%02d:%02d.%04d "
+			, sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds
+			);
+		pMTrace(0, XTRACE_TEXT_COLOR, (LPARAM)szBuf, 0, 0);
+	}
+
+	if (pMTrace)
+	{
 		va_list args;
 		va_start(args, lpszFormat);
 		int nBuf;
@@ -148,12 +161,24 @@ inline void xTrace(LPCWSTR lpszFormat, ...)
 		va_end(args);
 		delete [] pszBuffer;
 	}
-
 }
 
 inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
 {
 	MAGIC_TRACE_PROC pMTrace = GetMagicTraceProc();
+	if (pMTrace)
+	{
+		SYSTEMTIME sys;
+		GetLocalTime(&sys);
+
+		TCHAR szBuf[512] = _T("");
+		wsprintf(szBuf
+			, L"%d-%02d-%02d %02d:%02d:%02d.%04d "
+			, sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds
+		);
+		pMTrace(0, textCr, (LPARAM)szBuf, 0, 0);
+	}
+
 	if (pMTrace)
 	{
 		va_list args;
