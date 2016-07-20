@@ -8,4 +8,4 @@
 
 
 当程序异常后，在可执行文件同级文件夹生成.dmp文件，用visual studio打开可以看到异常堆栈。
-debug/release都支持。
+**debug/release**都支持。
