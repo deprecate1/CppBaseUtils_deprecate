@@ -113,60 +113,13 @@ inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
 
 #else
 
-inline void xTrace(LPCWSTR lpszFormat, ...)
+inline void ____xTrace_unicode(COLORREF textCr, LPCWSTR lpszFormat, va_list args)
 {
 	MAGIC_TRACE_PROC pMTrace = GetMagicTraceProc();
-	if (pMTrace)
-	{
-		SYSTEMTIME sys;
-		GetLocalTime(&sys);
+	if (!pMTrace)
+		return;
 
-		TCHAR szBuf[512] = _T("");
-		wsprintf(szBuf
-			, L"%d-%02d-%02d %02d:%02d:%02d.%04d "
-			, sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds
-			);
-		pMTrace(0, XTRACE_TEXT_COLOR, (LPARAM)szBuf, 0, 0);
-	}
-
-	if (pMTrace)
-	{
-		va_list args;
-		va_start(args, lpszFormat);
-		int nBuf;
-		TCHAR * pszBuffer = new TCHAR[4096];
-		nBuf = wvsprintf(pszBuffer, lpszFormat, args);
-		if (nBuf) 
-		{
-			int len = lstrlen(pszBuffer);
-			int rest = len;
-			TCHAR * pTemp = pszBuffer;
-			while (rest)
-			{
-				int l = rest;
-				if (l > 508)
-				{
-					l = 508;
-					const TCHAR * p2 = CharPrevW(pTemp, pTemp+l);
-					l = p2 - pTemp;
-				}
-				TCHAR szBuf[512] = _T("");
-				wcsncpy(szBuf, pTemp , l);
-				wprintf(szBuf);
-				pMTrace(0, XTRACE_TEXT_COLOR, (LPARAM)szBuf, 0, 0);
-				pTemp += l;
-				rest -= l;
-			}
-		}
-		va_end(args);
-		delete [] pszBuffer;
-	}
-}
-
-inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
-{
-	MAGIC_TRACE_PROC pMTrace = GetMagicTraceProc();
-	if (pMTrace)
+	// 显示时间
 	{
 		SYSTEMTIME sys;
 		GetLocalTime(&sys);
@@ -179,10 +132,8 @@ inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
 		pMTrace(0, textCr, (LPARAM)szBuf, 0, 0);
 	}
 
-	if (pMTrace)
+	// 显示消息内容
 	{
-		va_list args;
-		va_start(args, lpszFormat);
 		int nBuf;
 		TCHAR * pszBuffer = new TCHAR[4096];
 		nBuf = wvsprintf(pszBuffer, lpszFormat, args);
@@ -207,10 +158,58 @@ inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
 				rest -= l;
 			}
 		}
-		va_end(args);
 		delete [] pszBuffer;
 	}
 
 }
+
+// unicode封装1
+inline void xTrace(COLORREF textCr, LPCWSTR lpszFormat, ...)
+{
+	va_list ap;
+	va_start(ap, lpszFormat);
+	____xTrace_unicode(textCr, lpszFormat, ap);
+	va_end(ap);
+}
+
+// unicode封装2
+inline void xTrace(LPCWSTR lpszFormat, ...)
+{
+	va_list ap;
+	va_start(ap, lpszFormat);
+	____xTrace_unicode(XTRACE_TEXT_COLOR, lpszFormat, ap);
+	va_end(ap);
+}
+
+// ANSI封装2
+inline void xTrace(COLORREF textCr, LPCSTR lpszFormat, ...)
+{
+	va_list ap;
+	va_start(ap, lpszFormat);
+	char * pszBuffer = new char[4096];
+	vsprintf(pszBuffer, lpszFormat, ap);
+	va_end(ap);
+
+	// 转换成unicode输出
+	USES_CONVERSION;
+	xTrace(textCr, L"%s", A2W(pszBuffer));
+	delete[] pszBuffer;
+}
+
+// ANSI封装2
+inline void xTrace(LPCSTR lpszFormat, ...)
+{
+	va_list ap;
+	va_start(ap, lpszFormat);
+	char * pszBuffer = new char[4096];
+	vsprintf(pszBuffer, lpszFormat, ap);
+	va_end(ap);
+
+	// 转换成unicode输出
+	USES_CONVERSION;
+	xTrace(XTRACE_TEXT_COLOR, L"%s", A2W(pszBuffer));
+	delete[] pszBuffer;
+}
+
 #endif
 #endif
