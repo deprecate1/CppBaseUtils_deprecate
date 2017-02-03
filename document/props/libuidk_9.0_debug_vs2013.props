@@ -3,15 +3,15 @@
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros" />
 	<PropertyGroup>
-		<IncludePath>C:\Program Files (x86)\iUIShop\LibUIDK Enterprise\VC\atlmfc\include;$(IncludePath)</IncludePath>
-		<LibraryPath>C:\Program Files (x86)\iUIShop\LibUIDK Enterprise\VC\atlmfc\lib;$(LibraryPath)</LibraryPath>
+		<IncludePath>C:\Program Files (x86)\iUIShop\LibUIDK Enterprise_9.0.B07149\VC\atlmfc\include;$(IncludePath)</IncludePath>
+		<LibraryPath>C:\Program Files (x86)\iUIShop\LibUIDK Enterprise_9.0.B07149\VC\atlmfc\lib;$(LibraryPath)</LibraryPath>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link Condition="'$(Configuration)'=='Debug'">
-			<AdditionalDependencies>LibUIDK100ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>LibUIDK120ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 		<Link Condition="'$(Configuration)'=='Release'">
-			<AdditionalDependencies>LibUIDK100ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>LibUIDK120ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 	</ItemDefinitionGroup>
 	<ItemGroup />
