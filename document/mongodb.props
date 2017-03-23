@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<PropertyGroup Label="UserMacros">
+		<LIBBSON_DIST>D:\sdk\2013\libbson-1.6.1\</LIBBSON_DIST>
+		<MONGO_C_DIST>D:\sdk\2013\mongo-c-driver-1.6.1\</MONGO_C_DIST>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IncludePath>$(LIBBSON_DIST)\dist\include\libbson-1.0;$(MONGO_C_DIST)\dist\include\libmongoc-1.0;$(IncludePath)</IncludePath>
+		<LibraryPath>$(LIBBSON_DIST)\dist\lib;$(MONGO_C_DIST)\dist\lib;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>bson-1.0.lib;mongoc-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<ClCompile>
+			<PreprocessorDefinitions>MONGO_HAVE_STDINT;MONGO_HAVE_UNISTD;MONGO_USE_INT64;MONGO_USE_LONG_LONG_INT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemGroup />
+</Project>
