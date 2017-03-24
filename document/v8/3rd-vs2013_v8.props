@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<PropertyGroup Label="UserMacros">
+		<V8_PROJECT>D:\sdk\2013\v8-5.5.383\</V8_PROJECT>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IncludePath>$(V8_PROJECT);$(V8_PROJECT)\include;$(IncludePath)</IncludePath>
+		<LibraryPath Condition="'$(Configuration)'=='Debug'">$(V8_PROJECT)\build\Debug\lib;$(LibraryPath)</LibraryPath>
+		<LibraryPath Condition="'$(Configuration)'=='Release'">$(V8_PROJECT)\build\Release\lib;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>icui18n.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>icuuc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>v8_libplatform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>v8_libbase.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>v8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup />
+</Project>
