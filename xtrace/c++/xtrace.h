@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __XTRACE_YONGJIAN_2015_H
+#define __XTRACE_YONGJIAN_2015_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <tchar.h>
@@ -211,5 +212,6 @@ inline void xTrace(LPCSTR lpszFormat, ...)
 	delete[] pszBuffer;
 }
 
+#endif
 #endif
 #endif

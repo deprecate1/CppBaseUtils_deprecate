@@ -1,5 +1,5 @@
-#ifndef __PRINT_BIN_2015_H
-#define __PRINT_BIN_2015_H
+#ifndef __XTRACE_PRINT_BIN_YONGJIAN_2015_H
+#define __XTRACE_PRINT_BIN_YONGJIAN_2015_H
 #include "xtrace.h"
 
 #define DEBUG_PRINT_BIN
