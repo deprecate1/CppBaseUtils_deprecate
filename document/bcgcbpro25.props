@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<PropertyGroup Label="UserMacros">
+		<BCG_CONTROLBAR_PRO_DIR>C:\Program Files (x86)\BCGSoft\BCGControlBarPro\</BCG_CONTROLBAR_PRO_DIR>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IncludePath>$(BCG_CONTROLBAR_PRO_DIR)\BCGCBPro;$(IncludePath)</IncludePath>
+		<LibraryPath>$(BCG_CONTROLBAR_PRO_DIR)\Bin;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link Condition="'$(Configuration)'=='Debug'">
+			<AdditionalDependencies>BCGCBPRO2510ud120.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<Link Condition="'$(Configuration)'=='Release'">
+			<AdditionalDependencies>BCGCBPRO2510u120.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup />
+</Project>
