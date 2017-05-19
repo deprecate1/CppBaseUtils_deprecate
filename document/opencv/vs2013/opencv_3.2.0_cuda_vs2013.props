@@ -10,6 +10,9 @@
 		<LibraryPath Condition="'$(Platform)'=='X64'">$(OPENCV_PATH)\x64\vc12\lib;$(LibraryPath)</LibraryPath>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
+		<ClCompile>
+			<PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
 		<Link Condition="'$(Configuration)'=='Debug'">
 			<AdditionalDependencies>
 			opencv_aruco320d.lib;
