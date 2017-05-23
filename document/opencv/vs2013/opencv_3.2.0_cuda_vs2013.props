@@ -11,6 +11,7 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
+			<DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
 			<PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 		</ClCompile>
 		<Link Condition="'$(Configuration)'=='Debug'">
