@@ -25,9 +25,8 @@ libbson解压到D:\sdk\2013\mongo-c-driver-1.6.1\src\libbson
 	（上面的CMAKE_INSTALL_PREFIX必须有，否则debug覆盖release）
 
 	cd D:\sdk\2013\mongo-c-driver-1.6.1
-	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\mongo-c-driver-1.6.1\dist -DBSON_ROOT_DIR=D:\sdk\2013\libbson-1.6.1\dist  -G "Visual Studio 12"
+	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\mongo-c-driver-1.6.1\dist -DBSON_ROOT_DIR=D:\sdk\2013\libbson-1.6.1\dist  -G "Visual Studio 12"  -DENABLE_SSL=OFF
 	msbuild ALL_BUILD.vcxproj
 	msbuild INSTALL.vcxproj
-	（如果检测到第三方openssl，先把文件夹改名，编译完再改回）
 
 5.mongo-cxx-driver最低要求vs2015update1，暂不使用
