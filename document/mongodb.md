@@ -14,21 +14,37 @@ http://www.cnblogs.com/oloroso/p/5740431.html
 
 
 
-4.编译mongo-c-driver<br>
-libbson解压到D:\sdk\2013\mongo-c-driver-1.6.1\src\libbson
-
+4.编译（64位用注释的行替代）<br>
 
 	cd D:\sdk\2013\libbson-1.6.1
-	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\libbson-1.6.1\dist -G "Visual Studio 12"
-	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\libbson-1.6.1-64\dist -G "Visual Studio 12 2013 Win64"
-	msbuild ALL_BUILD.vcxproj
-	msbuild INSTALL.vcxproj
-	（上面的CMAKE_INSTALL_PREFIX必须有，否则debug覆盖release）
+	mkdir dist_release & cd dist_release
+	cmake .. -DCMAKE_INSTALL_PREFIX=./dist -G "Visual Studio 12"
+	//cmake .. -DCMAKE_INSTALL_PREFIX=./dist -G "Visual Studio 12 2013 Win64"
+	msbuild ALL_BUILD.vcxproj /p:Configuration=Release
+	msbuild INSTALL.vcxproj /p:Configuration=Release
+
+	cd ..
+	mkdir dist_debug & cd dist_debug
+	cmake .. -DCMAKE_INSTALL_PREFIX=./dist -G "Visual Studio 12"
+	//cmake .. -DCMAKE_INSTALL_PREFIX=./dist -G "Visual Studio 12 2013 Win64"
+	msbuild ALL_BUILD.vcxproj /p:Configuration=Debug
+	msbuild INSTALL.vcxproj /p:Configuration=Debug
+
+	=========================================
 
 	cd D:\sdk\2013\mongo-c-driver-1.6.1
-	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\mongo-c-driver-1.6.1\dist -DBSON_ROOT_DIR=D:\sdk\2013\libbson-1.6.1\dist  -G "Visual Studio 12"
-	cmake -DCMAKE_INSTALL_PREFIX=D:\sdk\2013\mongo-c-driver-1.6.1-64\dist -DBSON_ROOT_DIR=D:\sdk\2013\libbson-1.6.1-64\dist  -G "Visual Studio 12 2013 Win64"
-	msbuild ALL_BUILD.vcxproj
-	msbuild INSTALL.vcxproj
+	mkdir dist_release & cd dist_release
+	cmake .. -DCMAKE_INSTALL_PREFIX=./dist -DBSON_ROOT_DIR=../libbson-1.6.1/dist_release/dist     -G "Visual Studio 12"
+	//cmake .. -DCMAKE_INSTALL_PREFIX=./dist -DBSON_ROOT_DIR=../libbson-1.6.1-64/dist_release/dist  -G "Visual Studio 12 2013 Win64"
+	msbuild ALL_BUILD.vcxproj /p:Configuration=Release
+	msbuild INSTALL.vcxproj /p:Configuration=Release
+
+
+	cd ..
+	mkdir dist_debug & cd dist_debug
+	cmake .. -DCMAKE_INSTALL_PREFIX=./dist -DBSON_ROOT_DIR=../libbson-1.6.1/dist_debug/dist     -G "Visual Studio 12"
+	//cmake .. -DCMAKE_INSTALL_PREFIX=./dist -DBSON_ROOT_DIR=../libbson-1.6.1-64/dist_debug/dist  -G "Visual Studio 12 2013 Win64"
+	msbuild ALL_BUILD.vcxproj /p:Configuration=Debug
+	msbuild INSTALL.vcxproj /p:Configuration=Debug
 
 5.mongo-cxx-driver最低要求vs2015update1，暂不使用
