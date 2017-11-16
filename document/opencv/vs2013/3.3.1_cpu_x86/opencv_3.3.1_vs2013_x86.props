@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
@@ -59,6 +59,52 @@
 				opencv_xphoto331d.lib;
 				%(AdditionalDependencies)
 			</AdditionalDependencies>
+			<DelayLoadDLLs>
+				opencv_aruco331d.dll;
+				opencv_bgsegm331d.dll;
+				opencv_bioinspired331d.dll;
+				opencv_cadll3d331d.dll;
+				opencv_ccadll331d.dll;
+				opencv_core331d.dll;
+				opencv_datasets331d.dll;
+				opencv_dnn331d.dll;
+				opencv_dpm331d.dll;
+				opencv_face331d.dll;
+				opencv_features2d331d.dll;
+				opencv_flann331d.dll;
+				opencv_fuzzy331d.dll;
+				opencv_highgui331d.dll;
+				opencv_img_hash331d.dll;
+				opencv_imgcodecs331d.dll;
+				opencv_imgproc331d.dll;
+				opencv_line_descriptor331d.dll;
+				opencv_ml331d.dll;
+				opencv_objdetect331d.dll;
+				opencv_optflow331d.dll;
+				opencv_phase_unwrapping331d.dll;
+				opencv_photo331d.dll;
+				opencv_plot331d.dll;
+				opencv_reg331d.dll;
+				opencv_rgbd331d.dll;
+				opencv_saliency331d.dll;
+				opencv_shape331d.dll;
+				opencv_stereo331d.dll;
+				opencv_stitching331d.dll;
+				opencv_structured_light331d.dll;
+				opencv_superres331d.dll;
+				opencv_surface_matching331d.dll;
+				opencv_text331d.dll;
+				opencv_tracking331d.dll;
+				opencv_video331d.dll;
+				opencv_videoio331d.dll;
+				opencv_videostab331d.dll;
+				opencv_xfeatures2d331d.dll;
+				opencv_ximgproc331d.dll;
+				opencv_xobjdetect331d.dll;
+				opencv_xphoto331d.dll;
+				%(DelayLoadDLLs)
+			</DelayLoadDLLs>
+			<AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
 		</Link>
 		<Link Condition="'$(Configuration)'=='Release'">
 			<AdditionalDependencies>
@@ -106,6 +152,52 @@
 				opencv_xphoto331.lib;
 				%(AdditionalDependencies)
 			</AdditionalDependencies>
+			<DelayLoadDLLs>
+				opencv_aruco331.dll;
+				opencv_bgsegm331.dll;
+				opencv_bioinspired331.dll;
+				opencv_cadll3d331.dll;
+				opencv_ccadll331.dll;
+				opencv_core331.dll;
+				opencv_datasets331.dll;
+				opencv_dnn331.dll;
+				opencv_dpm331.dll;
+				opencv_face331.dll;
+				opencv_features2d331.dll;
+				opencv_flann331.dll;
+				opencv_fuzzy331.dll;
+				opencv_highgui331.dll;
+				opencv_img_hash331.dll;
+				opencv_imgcodecs331.dll;
+				opencv_imgproc331.dll;
+				opencv_line_descriptor331.dll;
+				opencv_ml331.dll;
+				opencv_objdetect331.dll;
+				opencv_optflow331.dll;
+				opencv_phase_unwrapping331.dll;
+				opencv_photo331.dll;
+				opencv_plot331.dll;
+				opencv_reg331.dll;
+				opencv_rgbd331.dll;
+				opencv_saliency331.dll;
+				opencv_shape331.dll;
+				opencv_stereo331.dll;
+				opencv_stitching331.dll;
+				opencv_structured_light331.dll;
+				opencv_superres331.dll;
+				opencv_surface_matching331.dll;
+				opencv_text331.dll;
+				opencv_tracking331.dll;
+				opencv_video331.dll;
+				opencv_videoio331.dll;
+				opencv_videostab331.dll;
+				opencv_xfeatures2d331.dll;
+				opencv_ximgproc331.dll;
+				opencv_xobjdetect331.dll;
+				opencv_xphoto331.dll;
+				%(DelayLoadDLLs)
+			</DelayLoadDLLs>
+			<AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
 		</Link>
 	</ItemDefinitionGroup>
 	<ItemGroup />
