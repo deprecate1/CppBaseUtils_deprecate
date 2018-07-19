@@ -12,6 +12,9 @@
 		<Link>
 			<AdditionalDependencies>libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
+		<ClCompile>
+			<PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
 	</ItemDefinitionGroup>
 	<ItemGroup />
 </Project>
