@@ -2,18 +2,18 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
-		<LIBBSON_DIST>D:\sdk\2013\libbson-1.6.1\</LIBBSON_DIST>
-		<MONGO_C_DIST>D:\sdk\2013\mongo-c-driver-1.6.1\</MONGO_C_DIST>
+		<MONGO_C_DIST>D:\sdk\2013\mongo-c-driver-1.11.0-x86\</MONGO_C_DIST>
 	</PropertyGroup>
 	<PropertyGroup>
-		<IncludePath Condition="'$(Configuration)'=='Debug'">$(LIBBSON_DIST)\dist_debug\dist\include\libbson-1.0;$(IncludePath)</IncludePath>
-		<IncludePath Condition="'$(Configuration)'=='Release'">$(LIBBSON_DIST)\dist_release\dist\include\libbson-1.0;$(IncludePath)</IncludePath>
-		<IncludePath Condition="'$(Configuration)'=='Debug'">$(MONGO_C_DIST)\dist_debug\dist\include\libmongoc-1.0;$(IncludePath)</IncludePath>
-		<IncludePath Condition="'$(Configuration)'=='Release'">$(MONGO_C_DIST)\dist_release\dist\include\libmongoc-1.0;$(IncludePath)</IncludePath>
-		<LibraryPath Condition="'$(Configuration)'=='Debug'">$(LIBBSON_DIST)\dist_debug\dist\lib;$(LibraryPath)</LibraryPath>
-		<LibraryPath Condition="'$(Configuration)'=='Release'">$(LIBBSON_DIST)\dist_release\dist\lib;$(LibraryPath)</LibraryPath>
-		<LibraryPath Condition="'$(Configuration)'=='Debug'">$(MONGO_C_DIST)\dist_debug\dist\lib;$(LibraryPath)</LibraryPath>
-		<LibraryPath Condition="'$(Configuration)'=='Release'">$(MONGO_C_DIST)\dist_release\dist\lib;$(LibraryPath)</LibraryPath>
+		<IncludePath Condition="'$(Configuration)'=='Debug'"  >$(MONGO_C_DIST)\dist-debug\include\libbson-1.0;$(IncludePath)</IncludePath>
+		<IncludePath Condition="'$(Configuration)'=='Debug'"  >$(MONGO_C_DIST)\dist-debug\include\libmongoc-1.0;$(IncludePath)</IncludePath>
+		<IncludePath Condition="'$(Configuration)'=='Release'">$(MONGO_C_DIST)\dist-release\include\libbson-1.0;$(IncludePath)</IncludePath>
+		<IncludePath Condition="'$(Configuration)'=='Release'">$(MONGO_C_DIST)\dist-release\include\libmongoc-1.0;$(IncludePath)</IncludePath>
+
+		<LibraryPath Condition="'$(Configuration)'=='Debug'"  >$(LIBBSON_DIST)\dist-debug\lib;$(LibraryPath)</LibraryPath>
+		<LibraryPath Condition="'$(Configuration)'=='Debug'"  >$(MONGO_C_DIST)\dist-debug\lib;$(LibraryPath)</LibraryPath>
+		<LibraryPath Condition="'$(Configuration)'=='Release'">$(LIBBSON_DIST)\dist-release\lib;$(LibraryPath)</LibraryPath>
+		<LibraryPath Condition="'$(Configuration)'=='Release'">$(MONGO_C_DIST)\dist-release\lib;$(LibraryPath)</LibraryPath>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link>
