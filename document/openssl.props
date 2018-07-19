@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<PropertyGroup Label="UserMacros">
+		<OPENSSL_DIST>D:\sdk\2013\openssl-OpenSSL_1_1_0h\dist\</OPENSSL_DIST>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IncludePath>$(OPENSSL_DIST)\include;$(IncludePath)</IncludePath>
+		<LibraryPath >$(OPENSSL_DIST)\lib;$(LibraryPath)</LibraryPath>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup />
+</Project>
