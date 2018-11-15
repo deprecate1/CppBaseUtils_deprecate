@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
-		<OPENSSL_DIST>D:\sdk\2013\openssl-OpenSSL_1_1_0h\dist\</OPENSSL_DIST>
+		<OPENSSL_DIST>D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist\</OPENSSL_DIST>
 	</PropertyGroup>
 	<PropertyGroup>
 		<IncludePath>$(OPENSSL_DIST)\include;$(IncludePath)</IncludePath>
@@ -10,7 +10,7 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link>
-			<AdditionalDependencies>libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 		<ClCompile>
 			<PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>

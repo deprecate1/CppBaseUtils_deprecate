@@ -1,10 +1,10 @@
 下载
 ========
-http://www.boost.org/     下载boost_1_60_0.7z(不建议用1_61_0，里面依赖python sdk很麻烦)
+http://www.boost.org/     下载boost_1_68_0.7z(不建议用1_61_0，里面依赖python sdk很麻烦)
 
-visual studio 2015编译
+visual studio 2013编译
 ========
-开始菜单找到‘VS2015 X86 本机工具命令提示符’，执行bootstrap.bat，
+开始菜单找到‘VS2013 X86 本机工具命令提示符’，执行bootstrap.bat，
 正常的话提示执行b2。b2执行成功会有如下提示：
 ![](https://github.com/wjx0912/CppBaseUtils/blob/master/document/image/boost.png)
 
