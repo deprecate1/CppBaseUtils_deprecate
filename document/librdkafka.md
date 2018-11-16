@@ -8,4 +8,4 @@
 库文件路径增加：D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist\lib
 Linker -> Input里面增加：libssl.lib，libcrypto.lib，减少：libeay32MT.lib, ssleay32MT.lib
 
-4.编译Debug/Release Win32
+4.编译librdkafka和librdkafkacpp的Debug/Release，平台是Win32

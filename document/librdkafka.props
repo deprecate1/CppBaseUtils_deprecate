@@ -11,7 +11,7 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link>
-			<AdditionalDependencies>librdkafka.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>librdkafka.lib;librdkafkacpp.lib%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 	</ItemDefinitionGroup>
 	<ItemGroup />
