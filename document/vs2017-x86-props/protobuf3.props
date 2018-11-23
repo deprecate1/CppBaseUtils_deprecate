@@ -12,12 +12,24 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<Link Condition="'$(Configuration)'=='Debug'">
-			<AdditionalDependencies>libprotobufd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalDependencies>libprotocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>
+				libprotobufd.lib;
+				libprotocd.lib;
+				%(AdditionalDependencies)
+			</AdditionalDependencies>
+			<DelayLoadDLLs>
+				%(DelayLoadDLLs)
+			</DelayLoadDLLs>
 		</Link>
 		<Link Condition="'$(Configuration)'=='Release'">
-			<AdditionalDependencies>libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
-			<AdditionalDependencies>libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalDependencies>
+				libprotobuf.lib;
+				libprotoc.lib;
+				%(AdditionalDependencies)
+			</AdditionalDependencies>
+			<DelayLoadDLLs>
+				%(DelayLoadDLLs)
+			</DelayLoadDLLs>
 		</Link>
 		<ClCompile>
 			<DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
