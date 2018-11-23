@@ -1,17 +1,17 @@
-vs2013编译protobuf3.3.0
+vs2013/vs2017编译protobuf3.6.1
 ===
-	解压protobuf-3.3.0.zip到  D:\sdk\2013
-	安装cmake-3.8.1或更高版本
+	解压protobuf-3.6.1.zip到  D:\sdk\vs2013-x86
+	安装cmake-3.12或更高版本
 
 编译release/debug版本
 ===
-	cd D:\sdk\2013\protobuf-3.3.0\cmake
+	D:\sdk\vs2013-x86\protobuf-3.6.1\cmake
 	mkdir release & cd release
 	cmake -G "NMake Makefiles" -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=./install -Dprotobuf_BUILD_SHARED_LIBS=ON ..
 	nmake
 	nmake install
 
-	cd D:\sdk\2013\protobuf-3.3.0\cmake
+	D:\sdk\vs2013-x86\protobuf-3.6.1\cmake
 	mkdir debug & cd debug
 	cmake -G "NMake Makefiles" -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Debug   -DCMAKE_INSTALL_PREFIX=./install -Dprotobuf_BUILD_SHARED_LIBS=ON ..
 	nmake
