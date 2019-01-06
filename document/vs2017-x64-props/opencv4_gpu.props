@@ -2,14 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ImportGroup Label="PropertySheets" />
 	<PropertyGroup Label="UserMacros">
-		<OPENCV_PATH4>D:\sdk\vs2017-x86\opencv-4.0.1-cpu\build\install\</OPENCV_PATH4>
+		<OPENCV_PATH4>D:\sdk\vs2017-x64\opencv-4.0.1-gpu\build\install\</OPENCV_PATH4>
 	</PropertyGroup>
 	<PropertyGroup>
 		<IncludePath>$(OPENCV_PATH4)\include;$(IncludePath)</IncludePath>
 		<IncludePath>$(OPENCV_PATH4)\include\opencv;$(IncludePath)</IncludePath>
 		<IncludePath>$(OPENCV_PATH4)\include\opencv2;$(IncludePath)</IncludePath>
-		<LibraryPath>$(OPENCV_PATH4)\x86\vc15\lib;$(LibraryPath)</LibraryPath>
-		<ExecutablePath>$(OPENCV_PATH4)\build\install\x86\vc15\bin\;$(ExecutablePath)</ExecutablePath>
+		<LibraryPath>$(OPENCV_PATH4)\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+		<ExecutablePath>$(OPENCV_PATH4)\build\install\x64\vc15\bin\;$(ExecutablePath)</ExecutablePath>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
@@ -26,6 +26,18 @@
 				opencv_calib3d401d.lib;
 				opencv_ccalib401d.lib;
 				opencv_core401d.lib;
+				opencv_cudaarithm401d.lib;
+				opencv_cudabgsegm401d.lib;
+				opencv_cudacodec401d.lib;
+				opencv_cudafeatures2d401d.lib;
+				opencv_cudafilters401d.lib;
+				opencv_cudaimgproc401d.lib;
+				opencv_cudalegacy401d.lib;
+				opencv_cudaobjdetect401d.lib;
+				opencv_cudaoptflow401d.lib;
+				opencv_cudastereo401d.lib;
+				opencv_cudawarping401d.lib;
+				opencv_cudev401d.lib;
 				opencv_datasets401d.lib;
 				opencv_dnn401d.lib;
 				opencv_dnn_objdetect401d.lib;
@@ -74,13 +86,25 @@
 				opencv_calib3d401d.dll;
 				opencv_ccalib401d.dll;
 				opencv_core401d.dll;
+				opencv_cudaarithm401d.dll;
+				opencv_cudabgsegm401d.dll;
+				opencv_cudacodec401d.dll;
+				opencv_cudafeatures2d401d.dll;
+				opencv_cudafilters401d.dll;
+				opencv_cudaimgproc401d.dll;
+				opencv_cudalegacy401d.dll;
+				opencv_cudaobjdetect401d.dll;
+				opencv_cudaoptflow401d.dll;
+				opencv_cudastereo401d.dll;
+				opencv_cudawarping401d.dll;
+				opencv_cudev401d.dll;
 				opencv_datasets401d.dll;
 				opencv_dnn401d.dll;
 				opencv_dnn_objdetect401d.dll;
 				opencv_dpm401d.dll;
 				opencv_face401d.dll;
 				opencv_features2d401d.dll;
-				opencv_ffmpeg401.dll;
+				opencv_ffmpeg401_64.dll;
 				opencv_flann401d.dll;
 				opencv_fuzzy401d.dll;
 				opencv_gapi401d.dll;
@@ -126,6 +150,18 @@
 				opencv_calib3d401.lib;
 				opencv_ccalib401.lib;
 				opencv_core401.lib;
+				opencv_cudaarithm401.lib;
+				opencv_cudabgsegm401.lib;
+				opencv_cudacodec401.lib;
+				opencv_cudafeatures2d401.lib;
+				opencv_cudafilters401.lib;
+				opencv_cudaimgproc401.lib;
+				opencv_cudalegacy401.lib;
+				opencv_cudaobjdetect401.lib;
+				opencv_cudaoptflow401.lib;
+				opencv_cudastereo401.lib;
+				opencv_cudawarping401.lib;
+				opencv_cudev401.lib;
 				opencv_datasets401.lib;
 				opencv_dnn401.lib;
 				opencv_dnn_objdetect401.lib;
@@ -174,13 +210,25 @@
 				opencv_calib3d401.dll;
 				opencv_ccalib401.dll;
 				opencv_core401.dll;
+				opencv_cudaarithm401.dll;
+				opencv_cudabgsegm401.dll;
+				opencv_cudacodec401.dll;
+				opencv_cudafeatures2d401.dll;
+				opencv_cudafilters401.dll;
+				opencv_cudaimgproc401.dll;
+				opencv_cudalegacy401.dll;
+				opencv_cudaobjdetect401.dll;
+				opencv_cudaoptflow401.dll;
+				opencv_cudastereo401.dll;
+				opencv_cudawarping401.dll;
+				opencv_cudev401.dll;
 				opencv_datasets401.dll;
 				opencv_dnn401.dll;
 				opencv_dnn_objdetect401.dll;
 				opencv_dpm401.dll;
 				opencv_face401.dll;
 				opencv_features2d401.dll;
-				opencv_ffmpeg401.dll;
+				opencv_ffmpeg401_64.dll;
 				opencv_flann401.dll;
 				opencv_fuzzy401.dll;
 				opencv_gapi401.dll;
