@@ -1,8 +1,8 @@
 下载
 ========
-http://www.boost.org/     下载boost_1_68_0.7z(不建议用1_61_0，里面依赖python sdk很麻烦)
+http://www.boost.org/     下载boost_1_70_0.7z(不建议用1_61_0或以下版本，里面依赖python sdk很麻烦)
 
-visual studio 2013编译
+visual studio 动态库
 ========
 开始菜单找到‘VS2013 X86 本机工具命令提示符’，执行bootstrap.bat，
 正常的话提示执行b2：
@@ -16,6 +16,20 @@ b2.exe   toolset=msvc-14.0						强制使用vs2015
 b2.exe   toolset=msvc-12.0						强制使用vs2013
 
 后面之所以加toolset参数，是因为：即便打开vs2017的prompt，因为安装了vs2019，由于路径的原因会用vs2019的编译器，这里起强制作用
+
+
+visual studio 静态库
+========
+
+boost会检测当前visual studio工程static或者multi thread等配置，然而上面的动态库并不会生成类似*sgd**.lib这样的库，也就是说dynamic和static必须各编译一套（相应的需要准备两个文件：boost.props和boost_static.props）
+
+b2.exe   toolset=msvc-14.2    link=static   runtime-link=static						强制使用vs2019
+
+b2.exe   toolset=msvc-14.1    link=static   runtime-link=static						强制使用vs2017
+
+b2.exe   toolset=msvc-14.0    link=static   runtime-link=static						强制使用vs2015
+
+b2.exe   toolset=msvc-12.0    link=static   runtime-link=static						强制使用vs2013
 
 
 
@@ -47,4 +61,4 @@ b2执行成功会有如下提示：
 		return 0;
 	}
 
-编译的时候把include和lib路径加入到工程
+
