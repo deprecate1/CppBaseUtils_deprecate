@@ -4,6 +4,7 @@
 ====
 打开cmake-gui，填写：
 D:/sdk/vs2017-x86/poco-poco-1.9.0-release
+
 D:/sdk/vs2017-x86/poco-poco-1.9.0-release/mybuild
 
 点击Configure按钮，然后配置：
