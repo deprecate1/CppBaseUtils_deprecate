@@ -30,3 +30,42 @@ cd D:\sdk\2013\openssl-OpenSSL_1_1_1
 	nmake
 	nmake test（时间较长可以不做）
 	nmake install             ★★★命令行需要管理员权限★★★
+
+
+
+
+
+
+
+
+
+
+
+=====================================================
+
+vs2010编译openssl-1.0.1c步骤：
+
+=====================================================
+
+参考：https://www.cnblogs.com/godboy1989/p/4064420.html
+
+具体如下：
+
+d:
+
+cd D:\sdk\vs2010-x86\openssl-OpenSSL_1_0_1c
+
+mkdir dist
+
+perl Configure VC-WIN32 --prefix=D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist
+
+输入**ms\do_nasm回车**
+
+然后：
+
+生成动态库使用  nmake -f ms\ntdll.mak             建议用动态库
+
+生成静态库使用  nmake -f ms\nt.mak
+
+
+

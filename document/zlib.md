@@ -33,3 +33,21 @@ zlib-1.2.11(from http://zlib.net)
 	cd D:\sdk\vs2017\zlib-1.2.11
 	nmake -f win32/Makefile.msc LOC="-DASMV -DASMINF" OBJA="inffas32.obj match686.obj" 
 
+
+
+=========================================================
+
+**重要**
+
+=========================================================
+
+inflate里面的inflate_fast是汇编写的，目前最新版本仍然存在bug，会导致指针异常。
+
+这个函数存在汇编和c语言两个版本，改为强制c语言，去掉zlibvc项目的2个预定义宏：
+
+ASMV
+
+ASMINF
+
+并且把附加依赖项的obj去掉：..\..\masmx86\match686.obj;..\..\masmx86\inffas32.obj;
+
