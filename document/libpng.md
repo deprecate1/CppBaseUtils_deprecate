@@ -8,7 +8,9 @@
 
 然后打开：libpng-1.6.37\projects\vstudio\vstudio.sln
 
-编译libpng的debug和release，如果有编译错误，把项目属性的‘将警告视为错误’关闭即可
+编译libpng的debug和release（带library的是静态库，加起来就是4个，也建议编译），
+
+如果有编译错误，把项目属性的‘将警告视为错误’关闭即可
 
 
 
