@@ -65,7 +65,7 @@ perl Configure VC-WIN32 --prefix=D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist
 
 生成动态库使用  nmake -f ms\ntdll.mak             建议用动态库
 
-生成静态库使用  nmake -f ms\nt.mak
+生成静态库使用  nmake -f ms\nt.mak                 不推荐！
 
 
 
