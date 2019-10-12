@@ -7,9 +7,12 @@
 - D:/sdk/opencv2413/sources
 - D:/sdk/opencv2413/sources/newbuild
 - cmake-gui上点Configure(有个警告可以不用管)
-- cmake-gui上点‘Add Entry’，添加CMAKE_GENERATOR_TOOLSET，类型STRING，值v140_xp；去掉BUILD_SHARED_LIBS
+- cmake-gui上点‘Add Entry’，添加CMAKE_GENERATOR_TOOLSET，类型STRING，值v140_xp；去掉BUILD_SHARED_LIBS；这一步不要做了
+- cmake去掉：cuda，cufft 
 - cmake-gui上点Generate生成OpenCV.sln
 - 打开:D:\sdk\opencv2413\sources\newbuild\OpenCV.sln，批生成全部
+
+
 
 
 编译opencv3.1.0（未完全测试，请勿参考）
