@@ -22,5 +22,5 @@ cmake  -G  "Visual Studio 14 2015"  -DCMAKE_BUILD_TYPE:string="Release" ../
 
 
 
-如果是openjpeg-1.5.2，也是一样的方法，vs2015编译ok
+如果是openjpeg-1.5.2，也是一样的方法，vs2015编译ok；尽量不要用openjpeg-1.x版本，接口太老了
 
