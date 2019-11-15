@@ -10,7 +10,7 @@ https://github.com/QbProg/crashrpt2
 
 
 
-编译方法都一样：
+**这2个版本的编译方法都一样**
 
 1.打开cmake-gui，然后source和build选择
 
@@ -22,5 +22,16 @@ D:/sdk/vs2015-x86/crashrpt2-master/build
 
 
 
-支持unicode
+**集成需要的文件，多语言等**
 
+编译时用props文件，并至少集成二进制文件：CrashRpt1500.dll，CrashSender1500.exe, dbghelp.dll
+
+
+
+dbghelp.dll：虽然一般os集成了，但crashrpt帮助文档中建议也集成二进制文件：
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\Extensions\Cpp
+
+或者
+
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\TestPlatform\Extensions\Cpp
