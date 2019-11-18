@@ -24,7 +24,7 @@ D:/sdk/vs2015-x86/crashrpt2-master/build
 
 **集成需要的文件，多语言等**
 
-编译时用props文件，并至少集成二进制文件：CrashRpt1500.dll，CrashSender1500.exe, dbghelp.dll
+编译时用props文件，并至少集成二进制文件：CrashRpt1500.dll，CrashSender1500.exe, dbghelp.dll，必须集成语言文件crashrpt_lang.ini，否则报错（可以通过crGetLastErrorMsg得到信息）
 
 
 
