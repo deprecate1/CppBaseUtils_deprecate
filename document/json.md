@@ -1,3 +1,8 @@
-推荐：https://github.com/MJPA/SimpleJSON
+https://github.com/nlohmann/json
 
-支持unicode
+
+
+不需要编译，直接包含头文件即可，有props文件
+
+
+
