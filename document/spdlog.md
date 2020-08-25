@@ -10,17 +10,9 @@ spdlog有几种使用方式：包含头文件形式，或者编译成dll库
 
 
 
-解决方法：spdlog-1.4.0以后的版本支持编译dll方式**【貌似不成功】**
-
-cd D:\sdk\vs2015-x86\spdlog-1.4.2
-
-mkdir build && cd build
-
-cmake .. -DCMAKE_BUILD_TYPE=shared -G "Visual Studio 14 2015"
-
-然后用vs2015打开sln文件编译
 
 
+cmake编译：win32和x64
 
-附props文件
+
 
