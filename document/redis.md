@@ -8,17 +8,9 @@ https://github.com/tporadowski/redis
 
 
 
-编译hiredis即可，生成hiredis.lib
+打开msvc\RedisServer.sln
 
-
-
-
-
-
-
-
-
-
+编译子项目：hiredis和Win32_Interop即可
 
 
 
