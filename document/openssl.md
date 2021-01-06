@@ -27,16 +27,26 @@ cd D:\sdk\vs201x\openssl-OpenSSL_1_1_1
 
 说明：perl Configure可能报错：打开C:\Perl64\site\lib\ActivePerl\Config.pm 找到_warn函数，大约在394行，把里面的全部注释掉
 
-	perl Configure VC-WIN32 --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-win32
-	nmake
-	nmake install_sw
-	nmake distclean
 
 
-	perl Configure  VC-WIN64A  --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-x64
-	nmake
-	nmake install_sw
-	nmake distclean
+	批处理build.bat：
+	call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
+	perl Configure no-asm VC-WIN32   --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-win32
+	nmake && nmake install_sw && nmake distclean  && echo "success--------------"
+	call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+	perl Configure no-asm VC-WIN64A  --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-x64
+	nmake && nmake install_sw && nmake distclean  && echo "success--------------"
+	pause
+	
+	
+	批处理build.bat：
+	call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
+	perl Configure no-asm VC-WIN32   --prefix=D:\sdk\vs2019\openssl-openssl-3.0.0-alpha9\dist-win32
+	nmake && nmake install_sw && nmake distclean  && echo "success--------------"
+	call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+	perl Configure no-asm VC-WIN64A  --prefix=D:\sdk\vs2019\openssl-openssl-3.0.0-alpha9\dist-x64
+	nmake && nmake install_sw && nmake distclean  && echo "success--------------"
+	pause
 
 
 
