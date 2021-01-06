@@ -43,7 +43,7 @@ cd D:\sdk\vs201x\openssl-OpenSSL_1_1_1
 
 makefile 里面还可以：nmake install_ssldirs ，但是目前没有用到
 
-
+注意：openssl 1.1.0开始由原先的libeay32.dll、ssleay32.dll变成了libcrypto-1_1.dll、libssl-1_1.dll，一些加密方式也发生了变化
 
 
 
