@@ -14,9 +14,11 @@ https://github.com/QbProg/crashrpt2
 
 1.打开cmake-gui，然后source和build选择
 
-D:/sdk/vs2015-x86/crashrpt2-master
+D:/sdk/vs2019/crashrpt2-master-2020.08.25
 
-D:/sdk/vs2015-x86/crashrpt2-master/build
+D:/sdk/vs2019/crashrpt2-master-2020.08.25/build/win32
+
+D:/sdk/vs2019/crashrpt2-master-2020.08.25/build/x64
 
 点configure按钮，选择vs2015或者其它版本，再点generate按钮，然后visual studio打开sln文件编译debug&release版本
 
