@@ -17,19 +17,37 @@ https://www.codeproject.com/Articles/1016357/OpenSSL-Tour-for-Win-Developer
 
 =====================================================
 
-打开“VS2013 x86 本机工具命令提示符”或者“VS2017 x86 本机工具命令提示符” ，可以管理员身份运行
+打开“VS2013 x86/x64 本机工具命令提示符”或者“VS2019 x86/x64 本机工具命令提示符” 
 
-cd D:\sdk\2013\openssl-OpenSSL_1_1_1
+cd D:\sdk\vs201x\openssl-OpenSSL_1_1_1
 
 说明：老版本的openssl需要执行ms\do_ms.bat脚本，现在1.1.x不需要了文件也被删除了
 
-
 注意：下面的prefix最好加上，openssl文件组织实在太乱了
 
-	perl Configure VC-WIN32 --prefix=D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist
+说明：perl Configure可能报错：打开C:\Perl64\site\lib\ActivePerl\Config.pm 找到_warn函数，大约在394行，把里面的全部注释掉
+
+	perl Configure VC-WIN32 --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-win32
 	nmake
-	nmake test（时间较长可以不做）
-	nmake install             ★★★命令行需要管理员权限★★★
+	nmake install_sw
+	nmake distclean
+
+
+	perl Configure  VC-WIN64A  --prefix=D:\sdk\vs2019\openssl-OpenSSL_1_1_1i\dist-x64
+	nmake
+	nmake install_sw
+	nmake distclean
+
+
+
+
+makefile 里面还可以：nmake install_ssldirs ，但是目前没有用到
+
+
+
+
+
+
 
 
 
@@ -57,7 +75,7 @@ cd D:\sdk\vs2010-x86\openssl-OpenSSL_1_0_1c
 
 mkdir dist
 
-perl Configure VC-WIN32 --prefix=D:\sdk\vs2013\openssl-OpenSSL_1_1_1\dist
+perl Configure VC-WIN32 --prefix=D:\sdk\vs2010\openssl-OpenSSL_1_1_1\dist
 
 输入**ms\do_nasm回车**
 
