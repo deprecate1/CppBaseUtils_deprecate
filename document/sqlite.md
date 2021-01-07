@@ -1,14 +1,24 @@
-https://github.com/mackyle/sqlite    截止2020.8.25最新版本是：sqlite-version-3.33.0
+从官网下载 https://www.sqlite.org/download.html     文件：sqlite-src-3340000.zip（文件大约12MB）
 
-要先安装tcl8.6，参考README.md折腾了一会还是不行
+安装ActiveTcl-8.6，接下来编译步骤参考里面的README.md
 
-**放弃**
+打开“VS2013 x86/x64 本机工具命令提示符”或者“VS2019 x86/x64 本机工具命令提示符” 
+
+cd D:\sdk\vs2019\sqlite-src-3340000\
+
+mkdir  build_Win32  build_x64
+
+nmake /f ..\Makefile.msc TOP=..\                        // x86/x64分别执行
+
+
+
+
 
 
 
 ======================================================================
 
-**建议用下面的方法编译**
+**老的编译方法（不再推荐）**
 
 ======================================================================
 
@@ -34,7 +44,7 @@ SQLITE_ENABLE_DESERIALIZE
 
 添加模块定义文件 sqlite3.def
 
-
-
 后面都参考https://my.oschina.net/u/4296574/blog/4275395
+
+
 
