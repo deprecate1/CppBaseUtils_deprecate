@@ -20,7 +20,7 @@ vs2015/2017编译
 
 编译子项目zlibvc的win32/x64平台的Debug&Release。生成zlibwapi.dll
 
-x64的debug可能编译不过，修改zlibvc.vcxproj把bld_ml64.bat路径改对就行了
+x64的debug可能编译不过，修改zlibvc.vcxproj把bld_ml64.bat删掉手动执行
 
 
 
