@@ -39,7 +39,7 @@ OPENCV_EXTRA_MODULES_PATH 值设置为 D:/sdk/vs2019/opencv-4.5.1/opencv_contrib
 cufft, npps, nvblas等库只有x64版本，所以opencv-gpu只能编译64位的
 和cpu版本不同：打开所有包含cu的选项
 
-
+7.批编译里面选：ALL_BUILD，INSTALL
 
 
 
