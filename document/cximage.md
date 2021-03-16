@@ -32,3 +32,13 @@ $(OutDir)png.lib 改为 ..\..\Debug\png.lib 或者  ..\..\Release\png.lib
 
 
 
+使用说明：
+
+https://www.codeproject.com/Articles/1300/CxImage
+
+- CxImage : *cximage.lib* - static library
+- CxImageCrtDll : *cximagecrt.dll* - DLL not using mfc
+- CxImageMfcDll : *cximage.dll* - DLL using mfc
+- Demo : *demo.exe* - program linked with *cximage.lib* and the C libraries
+- DemoDll : *demodll.exe* - program linked with *cximagecrt.dll*
+- libdcr,jasper,jbig,jpeg,png,tiff,zlib : static C libraries
