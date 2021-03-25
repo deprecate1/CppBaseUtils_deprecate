@@ -79,7 +79,29 @@ void test123()
 
 
 
-==================
+5.发布时，必须要集成的dll（这10个dll是最基本的）：
 
-发布时，拷贝dll：
+```
+CORE_DB_bzlib_.dll
+CORE_DB_freetype_.dll
+CORE_DB_glib_.dll
+CORE_DB_lcms_.dll
+CORE_DB_libxml_.dll
+CORE_DB_lqr_.dll
+CORE_DB_Magick++_.dll
+CORE_DB_MagickCore_.dll
+CORE_DB_MagickWand_.dll
+CORE_DB_zlib_.dll
+```
 
+比如还要ico转png功能，还需要集成4个dll：
+
+```
+CORE_DB_png_.dll
+
+CORE_RL_png_.dll
+
+IM_MOD_DB_icon_.dll
+
+IM_MOD_DB_png_.dll
+```
