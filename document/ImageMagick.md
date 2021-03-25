@@ -52,6 +52,33 @@ vs2019打开 .\VisualMagick\VisualStaticMTD.sln **只编译Release**
 
 
 
+4.使用
+
+只要#include <Magick++.h>就可以使用所有功能了
+
+```
+#include <Magick++.h>
+using namespace std;
+using namespace Magick;
+
+void test123()
+{
+	InitializeMagick(NULL);
+
+	Image image;
+	try {
+		image.read("logo:");
+		image.crop(Geometry(100, 100, 100, 100));
+		image.write("ImageMagickTest.png");
+	} catch (Exception& error_) {
+		return;
+	}
+
+}
+```
+
+
+
 ==================
 
 发布时，拷贝dll：
