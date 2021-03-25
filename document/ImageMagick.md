@@ -107,3 +107,14 @@ IM_MOD_DB_icon_.dll
 
 IM_MOD_DB_png_.dll
 ```
+
+
+
+6.填坑记录
+
+比如有个文件:   c:\myfile ，这是个ico文件，但是没有后缀，Magick++的接口不支持直接read，会报no codec异常，解决方法：
+
+			Image image;
+			image.magick("ICON");
+			image.read(Blob(buffer, size));				// 把文件读到内存里面：buffer/size，再用Blob构造
+			image.write("c:\\output_to_png_format.png");
