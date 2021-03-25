@@ -74,6 +74,8 @@ void test123()
 		return;
 	}
 
+	TerminateMagick();
+	printf("success.\n");
 }
 ```
 
