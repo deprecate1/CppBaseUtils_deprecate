@@ -8,14 +8,12 @@ vs2019打开CxImageFull_vc10.sln，修改：
 
 
 
-（1）.\CxImage\stdint.h
+（1）修改.\CxImage\ximadef.h
 
-//typedef int16_t   int_fast16_t;			// vs2019里面这个注释掉，107行
-typedef int32_t   int_fast32_t;
-typedef int64_t   int_fast64_t;
-typedef uint8_t   uint_fast8_t;
-//typedef uint16_t  uint_fast16_t;		// vs2019里面这个注释掉
+第96行，#include "stdint.h" 改为 #include <stdint.h>
 
+修改.\CxImage\ximacfg.h，添加一行：
+#define CXIMAGE_SUPPORT_ENCODE 1
 
 
 （2）cximagemfcdll 项目属性，链接器，输入库：
@@ -30,7 +28,9 @@ $(OutDir)png.lib 改为 ..\..\Debug\png.lib 或者  ..\..\Release\png.lib
 
 
 
-除了demo和demodll之外的都编译，子项目的依赖没有做好，需要编译2次
+这3个项目不需要编译：demo，demodll，cximagemfcdll
+
+**注意：整个工程的子项目的依赖没有做好，需要编译2次**
 
 
 
@@ -46,6 +46,5 @@ https://www.codeproject.com/Articles/1300/CxImage
 - libdcr,jasper,jbig,jpeg,png,tiff,zlib : static C libraries
 
 
-
-测试只有CxImageCrtDll 可以用
+推荐用CxImageCrtDll 
 
