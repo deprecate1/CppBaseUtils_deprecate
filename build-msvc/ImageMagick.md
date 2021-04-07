@@ -48,6 +48,8 @@ vs2019打开 .\VisualMagick\VisualStaticMTD.sln **只编译Release**
 
 
 
+
+
 3.属性表
 
 
@@ -81,31 +83,28 @@ void test123()
 
 
 
-5.发布时，必须要集成的dll（这10个dll是最基本的）：
+5.发布时，必须要集成的dll（这几个dll是最基本的）：
 
 ```
-CORE_DB_bzlib_.dll
-CORE_DB_freetype_.dll
-CORE_DB_glib_.dll
-CORE_DB_lcms_.dll
-CORE_DB_libxml_.dll
-CORE_DB_lqr_.dll
-CORE_DB_Magick++_.dll
-CORE_DB_MagickCore_.dll
-CORE_DB_MagickWand_.dll
-CORE_DB_zlib_.dll
+CORE_RL_bzlib_.dll
+CORE_RL_libxml_.dll
+CORE_RL_freetype_.dll
+CORE_RL_lqr_.dll
+CORE_RL_glib_.dll
+CORE_RL_zlib_.dll
+CORE_RL_lcms_.dll
+
+CORE_RL_MagickWand_.dll
+CORE_RL_Magick++_.dll
+CORE_RL_MagickCore_.dll
 ```
 
-比如还要ico转png功能，还需要集成4个dll：
+比如还要ico转png功能，还需要集成几个dll：
 
 ```
-CORE_DB_png_.dll
-
+IM_MOD_RL_icon_.dll
+IM_MOD_RL_png_.dll
 CORE_RL_png_.dll
-
-IM_MOD_DB_icon_.dll
-
-IM_MOD_DB_png_.dll
 ```
 
 
