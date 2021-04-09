@@ -38,13 +38,13 @@ D:\sdk\vs2019\ImageMagick\64
 
 选择：“Dynamic Multi-threaded DLL runtimes"（默认的也是这个），其它默认
 
-vs2019打开 .\VisualMagick\VisualStaticMTD.sln **只编译Release**
+vs2019打开 .\VisualMagick\VisualStaticMTD.sln **编译Debug&Release**
 
 (3)64位
 
 选择：“Dynamic Multi-threaded DLL runtimes"（默认的也是这个），并选择"64bit", 其它默认
 
-vs2019打开 .\VisualMagick\VisualStaticMTD.sln **只编译Release**
+vs2019打开 .\VisualMagick\VisualStaticMTD.sln **编译Debug&Release**
 
 
 
