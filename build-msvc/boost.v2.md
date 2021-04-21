@@ -14,11 +14,11 @@ vs2015是14.0，vs2017是14.1，vs2019是14.2
 
 
 
-b2.exe   toolset=msvc-14.1   --prefix=./build/default-win32/prefix  --stagedir=./build/default-win32/stage   --build-dir=./build/default-win32/build
+b2.exe   toolset=msvc-14.2   --prefix=./build/default-win32/prefix  --stagedir=./build/default-win32/stage   --build-dir=./build/default-win32/build
 
-b2.exe   toolset=msvc-14.1   --prefix=./build/static-win32/prefix     --stagedir=./build/static-win32/stage      --build-dir=./build/static-win32/build     link=static   runtime-link=static
+b2.exe   toolset=msvc-14.2   --prefix=./build/static-win32/prefix     --stagedir=./build/static-win32/stage      --build-dir=./build/static-win32/build     link=static   runtime-link=static
 
-b2.exe   toolset=msvc-14.1   --prefix=./build/default-x64/prefix      --stagedir=./build/default-x64/stage       --build-dir=./build/default-x64/build
+b2.exe   toolset=msvc-14.2   --prefix=./build/default-x64/prefix      --stagedir=./build/default-x64/stage       --build-dir=./build/default-x64/build
 
-b2.exe   toolset=msvc-14.1   --prefix=./build/static-x64/prefix         --stagedir=./build/static-x64/stage          --build-dir=./build/static-x64/build         link=static   runtime-link=static
+b2.exe   toolset=msvc-14.2   --prefix=./build/static-x64/prefix         --stagedir=./build/static-x64/stage          --build-dir=./build/static-x64/build         link=static   runtime-link=static
 
