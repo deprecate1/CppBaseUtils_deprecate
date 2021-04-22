@@ -22,3 +22,17 @@ b2.exe   toolset=msvc-14.2   --prefix=./build/default-x64/prefix      --stagedir
 
 b2.exe   toolset=msvc-14.2   --prefix=./build/static-x64/prefix         --stagedir=./build/static-x64/stage          --build-dir=./build/static-x64/build         link=static   runtime-link=static
 
+
+
+可以删除：
+
+build\default-win32\build
+
+build\static-win32\build
+
+build\default-x64\build
+
+build\static-x64\build
+
+
+
