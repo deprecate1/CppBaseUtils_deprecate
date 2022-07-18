@@ -1,1 +1,9 @@
-cmake常规编译方法
+cd build\x64
+cmake  -G "Visual Studio 17 2022"  -A x64 ../../
+
+cd build\x86
+cmake  -G "Visual Studio 17 2022"  -A Win32 ../../
+
+
+
+分别打开sln，只需要编译uv项目
